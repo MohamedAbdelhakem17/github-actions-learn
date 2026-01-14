@@ -11,3 +11,9 @@ jobs:
    steps:
      - name: print message
        run:  echo "Wellcome to my firts workflow :)"
+
+     - name : chekout repo
+       uses: actions/checkout@v6.0.2
+
+     - name: List repo File
+       run:  ls -la 
